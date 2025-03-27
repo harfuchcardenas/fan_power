@@ -8,17 +8,19 @@ sub println {
     print "$message\n";
 }
 
-my %fan= (
-    "name" => "SUPERRED",
-    "voltage"  => 12,
-    "current"  => 0.125,
-    "power"    => .125
-);
-
 sub setPower{
     my ($volt, $amp) = @_;
     return $volt * $amp;
 }
+
+my %fan= (
+    "name" => "SUPERRED",
+    "voltage"  => 12,
+    "current"  => 0.125,
+    "power"    => 12 * 0.125 
+);
+
+
 
 my $fan_Voltage=12;
 my $fan_Current=.12;
