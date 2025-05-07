@@ -20,7 +20,11 @@ my %fan= (
     "power"    => 12 * 0.125 
 );
 
-
+my %FET= (
+    "name" => "2N7000",
+    "V-GS(ON)"  => "2.1",
+    "V-DS(ON)"  => "0.6 \@V-GS = 10V, I-D=500mA"
+);
 
 my $fan_Voltage=12;
 my $fan_Current=.12;
